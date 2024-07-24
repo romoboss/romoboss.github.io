@@ -52,6 +52,37 @@
         h2 {
             font-size: 38px;
         }
+        .button {
+            margin-top: 20px;
+            margin-left: 10px;
+            padding: 10px 20px;
+            font-size: 26px;
+            color: white;
+            background-color: #54c8ca;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: solid medium #000;
+            display: inline-flex;
+            align-items: center;
+
+            text-shadow: 
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                -1px -1px 0 #000,
+                0px 2px 0 #000,
+                2px 0px 0 #000,
+                0px -2px 0 #000,
+                -2px 0px 0 #000;
+            
+        }
+        .button:hover {
+            background-color: #189c9e;
+        }
+        .button img {
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +90,20 @@
     <div class="container">
         <h1>romoboss games</h1>
     </div>
+
+    <div class="container">
+        <h2>Follow Me</h2>
+        <button class="button" onclick="redirectToWebsite('https://romoboss.itch.io')">
+            <img src="itchio.png" alt="itch.io" width="45" height="45"> My itch.io Page
+        </button>
+        <button class="button" onclick="redirectToWebsite('https://discord.gg/z6j6FMM4g7')">
+            <img src="Discord.png" alt="Discord" width="45" height="45"> Discord Server
+        </button>
+        <button class="button" onclick="redirectToWebsite('https://www.youtube.com/channel/UCMyhwgA9kqhbb0g1h16-BGw')">
+            <img src="YouTube.png" alt="YouTube" width="45" height="45"> YouTube Channel
+        </button>
+    </div>
+
     
     <div class="container">
         <h2>Drobbi Bird</h2>
@@ -73,6 +118,12 @@
             Your browser does not support iframes.
         </iframe>
     </div>
+
+    <script>
+        function redirectToWebsite(url) {
+            window.location.href = url;
+        }
+    </script>
 
 </body>
 </html>
