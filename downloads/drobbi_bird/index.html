@@ -1,1 +1,139 @@
-<h1> test </h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>romoboss games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('../../Images/Background.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #000000;
+        }
+        .container {
+            max-width: 970px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.272);
+            border-radius: 15px;
+            text-align: center;
+        }
+        h1, h2, p {
+            margin: 0;
+            padding: 10px 0;
+            color: #ffffff;
+            text-shadow: 
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                -1px -1px 0 #000,
+                0px 2px 0 #000,
+                2px 0px 0 #000,
+                0px -2px 0 #000,
+                -2px 0px 0 #000;
+            
+        }
+        iframe {
+            margin-top: 20px;
+            border: 2px solid #00000000;
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+        b {
+            color: rgb(255, 67, 99);
+        }
+        h1 {
+            font-size: 65px;
+        }
+        h2 {
+            font-size: 38px;
+        }
+        .button {
+            margin-top: 20px;
+            margin-left: 10px;
+            padding: 10px 20px;
+            font-size: 26px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: solid medium #000;
+            display: inline-flex;
+            align-items: center;
+
+            text-shadow: 
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                -1px -1px 0 #000,
+                0px 2px 0 #000,
+                2px 0px 0 #000,
+                0px -2px 0 #000,
+                -2px 0px 0 #000;
+            
+        }
+        .button-link {
+            background-color: #54c8ca;
+        }
+        .button-link:hover {
+            background-color: #189c9e;
+        }
+        .button-play {
+            background-color: #ca5454;
+        }
+        .button-play:hover {
+            background-color: #9e1818;
+        }
+        .button-other {
+            background-color: #d6d852;
+        }
+        .button-other:hover {
+            background-color: #7b8830;
+        }
+        .button img {
+            margin-right: 10px;
+        }
+        .iframeplaceholder {
+            margin-top: 20px;
+            border: 2px solid #00000000;
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+        .aligned {
+            margin-top: 20px;
+            margin-left: 10px;
+            padding: 10px 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+        }
+    </style>
+
+    <script>
+        function loadIframe(id) {
+            var iframeContainer = document.getElementById(id);
+            iframeContainer.innerHTML = '<iframe src="Drobbi Bird/drobbi.html" id="gameIframe" title="Local Iframe" height="650" frameborder="0"> Your browser does not support iframes.'
+        }
+        function redirectToWebsite(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Downloads</h1>
+    </div>
+
+    <div class="container">
+        <h2>Pick the game version you wish to download</h2>
+        <button class="button button-link" onclick="redirectToWebsite('/downloads/drobbi_bird/1_5')">
+            1.5
+        </button>
+    </div>
+</body>

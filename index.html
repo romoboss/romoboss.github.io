@@ -7,7 +7,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('Background.png');
+            background-image: url('Images/Background.png');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -64,6 +64,7 @@
             outline: solid medium #000;
             display: inline-flex;
             align-items: center;
+            height: 65px;
 
             text-shadow: 
                 1px 1px 0 #000,
@@ -104,6 +105,13 @@
             max-width: 100%;
             display: block;
         }
+        .aligned {
+            margin-left: 10px;
+            padding: 10px 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+        }
     </style>
 
     <script>
@@ -121,20 +129,26 @@
 
     <div class="container">
         <h2>Follow Me</h2>
-        <button class="button button-link" onclick="redirectToWebsite('https://romoboss.itch.io')">
-            <img src="itchio.png" alt="itch.io" width="45" height="45"> My itch.io Page
-        </button>
-        <button class="button button-link" onclick="redirectToWebsite('https://discord.gg/z6j6FMM4g7')">
-            <img src="Discord.png" alt="Discord" width="45" height="45"> Discord Server
-        </button>
-        <button class="button button-link" onclick="redirectToWebsite('https://www.youtube.com/channel/UCMyhwgA9kqhbb0g1h16-BGw')">
-            <img src="YouTube.png" alt="YouTube" width="45" height="45"> YouTube Channel
-        </button>
+            <button class="button button-link" onclick="redirectToWebsite('https://romoboss.itch.io')">
+                <img src="Images/itchio.png" alt="itch.io" width="45" height="45"> My itch.io Page
+            </button>
+            <button class="button button-link" onclick="redirectToWebsite('https://discord.gg/z6j6FMM4g7')">
+                <img src="Images/Discord.png" alt="Discord" width="45" height="45"> Discord Server
+            </button>
+            <button class="button button-link" onclick="redirectToWebsite('https://www.youtube.com/channel/UCMyhwgA9kqhbb0g1h16-BGw')">
+                <img src="Images/YouTube.png" alt="YouTube" width="45" height="45"> YouTube Channel
+            </button>
     </div>
 
+    <div class="container">
+        <h2>Usefull Stuff</h2>
+        <button class="button button-other" onclick="redirectToWebsite('/downloads')">
+            Game Downloads
+        </button>
+    </div>
     
     <div class="container">
-        <h2>Drobbi Bird</h2>
+        <h2 class="aligned">Drobbi Bird<img src="Images/DrobbiBird.png" alt="DrobbiBird" width="45" height="45"> </h2>
         <p>
             <b>Drobbi Bird</b> is a <b>tap-scroller</b> video game. The game's core mechanics were based on the Game Maker's Toolkit's "The Unity Tutorial For Complete Beginners" on YouTube. Drobbi Bird draws inspiration from the classic game <b>Flappy Bird</b>. Players control a character equipped with a jetpack, <b>tapping the screen</b> to propel the character upward. The objective is to navigate through an <b>endless series of pipes</b> without colliding with them.
         </p>
@@ -147,8 +161,14 @@
                     <h3> Play Drobbi Bird! </h3>
                 </button>
         </div>
-        <button class="button button-other" onclick="redirectToWebsite('https://romoboss.itch.io/drobbi-bird')">
-            <img src="itchio.png" alt="itch.io" width="45" height="45"> View on itch.io
+        <div class="aligned">
+            <button class="button button-other" onclick="redirectToWebsite('https://romoboss.itch.io/drobbi-bird')">
+                <img src="Images/itchio.png" alt="itch.io" width="45" height="45"> View on itch.io
+            </button>
+            <button class="button button-other" onclick="redirectToWebsite('/downloads/drobbi_bird')">
+                Download
+            </button>
+        </div>
     </div>
 
     <script>
