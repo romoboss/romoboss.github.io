@@ -58,7 +58,6 @@
             padding: 10px 20px;
             font-size: 26px;
             color: white;
-            background-color: #54c8ca;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -77,13 +76,42 @@
                 -2px 0px 0 #000;
             
         }
-        .button:hover {
+        .button-link {
+            background-color: #54c8ca;
+        }
+        .button-link:hover {
             background-color: #189c9e;
+        }
+        .button-play {
+            background-color: #ca5454;
+        }
+        .button-play:hover {
+            background-color: #9e1818;
+        }
+        .button-other {
+            background-color: #d6d852;
+        }
+        .button-other:hover {
+            background-color: #7b8830;
         }
         .button img {
             margin-right: 10px;
         }
+        .iframeplaceholder {
+            margin-top: 20px;
+            border: 2px solid #00000000;
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
     </style>
+
+    <script>
+        function loadIframe(id) {
+            var iframeContainer = document.getElementById(id);
+            iframeContainer.innerHTML = '<iframe src="Drobbi Bird/drobbi.html" id="gameIframe" title="Local Iframe" height="650" frameborder="0"> Your browser does not support iframes.'
+        }
+    </script>
 </head>
 <body>
 
@@ -93,13 +121,13 @@
 
     <div class="container">
         <h2>Follow Me</h2>
-        <button class="button" onclick="redirectToWebsite('https://romoboss.itch.io')">
+        <button class="button button-link" onclick="redirectToWebsite('https://romoboss.itch.io')">
             <img src="itchio.png" alt="itch.io" width="45" height="45"> My itch.io Page
         </button>
-        <button class="button" onclick="redirectToWebsite('https://discord.gg/z6j6FMM4g7')">
+        <button class="button button-link" onclick="redirectToWebsite('https://discord.gg/z6j6FMM4g7')">
             <img src="Discord.png" alt="Discord" width="45" height="45"> Discord Server
         </button>
-        <button class="button" onclick="redirectToWebsite('https://www.youtube.com/channel/UCMyhwgA9kqhbb0g1h16-BGw')">
+        <button class="button button-link" onclick="redirectToWebsite('https://www.youtube.com/channel/UCMyhwgA9kqhbb0g1h16-BGw')">
             <img src="YouTube.png" alt="YouTube" width="45" height="45"> YouTube Channel
         </button>
     </div>
@@ -110,13 +138,17 @@
         <p>
             <b>Drobbi Bird</b> is a <b>tap-scroller</b> video game. The game's core mechanics were based on the Game Maker's Toolkit's "The Unity Tutorial For Complete Beginners" on YouTube. Drobbi Bird draws inspiration from the classic game <b>Flappy Bird</b>. Players control a character equipped with a jetpack, <b>tapping the screen</b> to propel the character upward. The objective is to navigate through an <b>endless series of pipes</b> without colliding with them.
         </p>
-        <iframe src="Drobbi Bird/drobbi.html" 
-                id="gameIframe"
-                title="Local Iframe" 
+        <div class="iframeplaceholder"
+                id="drobbiIframe"
+                title="Drobbi Bird" 
                 height="650"
                 frameborder="0">
-            Your browser does not support iframes.
-        </iframe>
+                <button class="button button-play" onclick="loadIframe('drobbiIframe')">
+                    <h3> Play Drobbi Bird! </h3>
+                </button>
+        </div>
+        <button class="button button-other" onclick="redirectToWebsite('https://romoboss.itch.io/drobbi-bird')">
+            <img src="itchio.png" alt="itch.io" width="45" height="45"> View on itch.io
     </div>
 
     <script>
