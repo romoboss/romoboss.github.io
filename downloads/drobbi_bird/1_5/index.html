@@ -119,6 +119,21 @@
             align-items: center;
             gap: 15px;
         }
+        .home-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: #45ffca;
+            border: none;
+            cursor: pointer;
+            outline: solid medium #000;
+        }
+        .home-button img {
+            width: 100%;
+            height: 100%;
+        }
     </style>
 
     <script>
@@ -132,6 +147,9 @@
     </script>
 </head>
 <body>
+    <button onclick="redirectToWebsite('/')" class="home-button">
+        <img src="../../../Images/Home01.png" alt="Home">
+    </button>
 
     <div class="container">
         <h1>Downloads</h1>
