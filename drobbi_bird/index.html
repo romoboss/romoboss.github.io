@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hello. My name is romoboss, also known as romoboss29 or romoboy29. I am a game developer and this is a website where you can find my games. Have a good time!">
-    <title>romoboss games</title>
-    <link rel="icon" href="Images/WebIcon.png" type="image/png">
+    <meta name="description" content="Drobbi Bird is a tap-scroller video game. The game's core mechanics were based on the Game Maker's Toolkit's The Unity Tutorial For Complete Beginners on YouTube. Drobbi Bird draws inspiration from the classic game Flappy Bird. Players control a character equipped with a jetpack, tapping the screen to propel the character upward. The objective is to navigate through an endless series of pipes without colliding with them.">
+    <title>Drobbi Bird</title>
+    <link rel="icon" href="../Images/DrobbiBird.png" type="image/png">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('Images/Background.png');
+            background-image: url('../Images/Background.png');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -25,7 +25,7 @@
             border-radius: 15px;
             text-align: center;
         }
-        h1, h2, p {
+        h1, h2, h3, p {
             margin: 0;
             padding: 10px 0;
             color: #ffffff;
@@ -140,7 +140,7 @@
     <script>
         function loadIframe(id) {
             var iframeContainer = document.getElementById(id);
-            iframeContainer.innerHTML = '<iframe src="drobbi_bird/" id="gameIframe" title="Local Iframe" height="650" frameborder="0"> Your browser does not support iframes.'
+            iframeContainer.innerHTML = '<iframe src="/drobbi_bird/game.html" id="gameIframe" title="Local Iframe" height="650" frameborder="0"> Your browser does not support iframes.'
         }
 
         function redirectToWebsite(url) {
@@ -150,41 +150,17 @@
 </head>
 <body>
     <button onclick="redirectToWebsite('/')" class="home-button">
-        <img src="Images/Home01.png" alt="Home">
+        <img src="../Images/Home01.png" alt="Home">
     </button>
 
     <div class="container">
-        <h1>romoboss games</h1>
+        <h1 class="aligned">Drobbi Bird<img src="../Images/DrobbiBird.png" alt="DrobbiBird" width="75" height="75"> </h1>
     </div>
 
     <div class="container">
-        <h2>Follow Me</h2>
-            <button class="button button-link" onclick="redirectToWebsite('https://romoboss.itch.io')">
-                <img src="Images/itchio.png" alt="itch.io" width="45" height="45"> My itch.io Page
-            </button>
-            <button class="button button-link" onclick="redirectToWebsite('https://discord.gg/z6j6FMM4g7')">
-                <img src="Images/Discord.png" alt="Discord" width="45" height="45"> Discord Server
-            </button>
-            <button class="button button-link" onclick="redirectToWebsite('https://www.youtube.com/channel/UCMyhwgA9kqhbb0g1h16-BGw')">
-                <img src="Images/YouTube.png" alt="YouTube" width="45" height="45"> YouTube Channel
-            </button>
-    </div>
-
-    <div class="container">
-        <h2>Usefull Stuff</h2>
-        <button class="button button-other" onclick="redirectToWebsite('/downloads')">
-            Game Downloads
-        </button>
-        <button class="button button-other" onclick="redirectToWebsite('/aboutme')">
-            About Me
-        </button>
-    </div>
-    
-    <div class="container">
-        <h2 class="aligned"><a href="/drobbi_bird">Drobbi Bird</a><img src="Images/DrobbiBird.png" alt="DrobbiBird" width="45" height="45"> </h2>
-        <p>
+        <h3>
             <b>Drobbi Bird</b> is a <b>tap-scroller</b> video game. The game's core mechanics were based on the Game Maker's Toolkit's "The Unity Tutorial For Complete Beginners" on YouTube. Drobbi Bird draws inspiration from the classic game <b>Flappy Bird</b>. Players control a character equipped with a jetpack, <b>tapping the screen</b> to propel the character upward. The objective is to navigate through an <b>endless series of pipes</b> without colliding with them.
-        </p>
+        </h3>
         <div class="iframeplaceholder"
                 id="drobbiIframe"
                 title="Drobbi Bird" 
@@ -196,13 +172,11 @@
         </div>
         <div class="aligned">
             <button class="button button-other" onclick="redirectToWebsite('https://youtu.be/_h-Rb0YXIbw?si=Mr4G9v_XoYYaHjSD')">
-                <img src="Images/YouTube.png" alt="YouTube" width="45" height="45"> Watch Trailer
+                <img src="../Images/YouTube.png" alt="YouTube" width="45" height="45"> Watch Trailer
             </button>
             <button class="button button-other" onclick="redirectToWebsite('/downloads/drobbi_bird')">
                 Download
             </button>
         </div>
     </div>
-
 </body>
-</html>
