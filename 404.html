@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hello. My name is romoboss, also known as romoboss29 or romoboy29. I am a game developer and this is a website where you can find my games. Have a good time!">
-    <meta name="theme-color" data-react-helmet="true" content="#189c9e">
-    <meta property="og:image" content="Images/DrobbiBird.png">
-    <title>download drobbi bird</title>
-    <link rel="icon" href="../../../Images/DrobbiBird.png" type="image/png">
+    <meta name="description" content="Are you sure this is where you wanted to go?">
+    <meta name="theme-color" data-react-helmet="true" content="#636363">
+    <meta property="og:image" content="/Images/PageNotFound.png.png">
+    <title>Page not found</title>
+    <link rel="icon" href="Images/PageNotFound.png" type="image/png">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('../../../Images/Background.png');
+            background-image: url('Images/Background.png');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -27,7 +27,7 @@
             border-radius: 15px;
             text-align: center;
         }
-        h1, h2, p {
+        h1, h2, h3, p {
             margin: 0;
             padding: 10px 0;
             color: #ffffff;
@@ -58,8 +58,12 @@
         h2 {
             font-size: 38px;
         }
+        h3 {
+            font-size: 30px;
+        }
         a {
             text-decoration: none;
+            color: #63ebbb;
         }
         .button {
             margin-top: 20px;
@@ -73,6 +77,7 @@
             outline: solid medium #000;
             display: inline-flex;
             align-items: center;
+            height: 65px;
 
             text-shadow: 
                 1px 1px 0 #000,
@@ -114,7 +119,6 @@
             display: block;
         }
         .aligned {
-            margin-top: 20px;
             margin-left: 10px;
             padding: 10px 20px;
             display: inline-flex;
@@ -141,8 +145,9 @@
     <script>
         function loadIframe(id) {
             var iframeContainer = document.getElementById(id);
-            iframeContainer.innerHTML = '<iframe src="Drobbi Bird/drobbi.html" id="gameIframe" title="Local Iframe" height="650" frameborder="0"> Your browser does not support iframes.'
+            iframeContainer.innerHTML = '<iframe src="Drobbi Bird/" id="gameIframe" title="Local Iframe" height="650" frameborder="0"> Your browser does not support iframes.'
         }
+
         function redirectToWebsite(url) {
             window.location.href = url;
         }
@@ -150,20 +155,23 @@
 </head>
 <body>
     <button onclick="redirectToWebsite('/')" class="home-button">
-        <img src="../../../Images/Home01.png" alt="Home">
+        <img src="Images/Home01.png" alt="Home">
     </button>
 
     <div class="container">
-        <h1>Downloads</h1>
+        <h1>Page not found</h1>
     </div>
 
     <div class="container">
-        <h2>Pick your device</h2>
-        <a class="button button-link" href="Drobbi Bird - Windows.zip" download>
-            Windows
-        </a>
-        <a class="button button-link" href="Drobbi Bird - Android.apk" download>
-            Android
-        </a>
+        <h2>
+            Are you sure this is where you wanted to go?
+        </h2>
+        <br>
+        <br>
+        <h3>
+            Error Code : 404
+        </h3>
+
+        <img src="Images/PageNotFound.png", width="200px", height="auto">
     </div>
 </body>
