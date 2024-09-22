@@ -28,7 +28,7 @@
             border-radius: 15px;
             text-align: center;
         }
-        h1, h2, p {
+        h1, h2, h3, h4, p {
             margin: 0;
             padding: 10px 0;
             color: #ffffff;
@@ -59,6 +59,9 @@
         h2 {
             font-size: 38px;
         }
+        h4 {
+            font-size: 10px;
+        }
         a {
             text-decoration: none;
             color: #63ebbb;
@@ -76,6 +79,7 @@
             display: inline-flex;
             align-items: center;
             height: 65px;
+            vertical-align: middle;
 
             text-shadow: 
                 1px 1px 0 #000,
@@ -138,6 +142,10 @@
             width: 100%;
             height: auto;
         }
+        .webver {
+            text-align: right;
+            margin-right: 2px;
+        }
     </style>
 
     <script>
@@ -184,28 +192,14 @@
     </div>
     
     <div class="container">
-        <h2 class="aligned"><a href="/drobbi-bird/">Drobbi Bird</a><img src="Images/DrobbiBird.png" alt="DrobbiBird" width="45" height="45"> </h2>
-        <p>
-            <b>Drobbi Bird</b> is a <b>tap-scroller</b> video game. The game's core mechanics were based on the Game Maker's Toolkit's "The Unity Tutorial For Complete Beginners" on YouTube. Drobbi Bird draws inspiration from the classic game <b>Flappy Bird</b>. Players control a character equipped with a jetpack, <b>tapping the screen</b> to propel the character upward. The objective is to navigate through an <b>endless series of pipes</b> without colliding with them.
-        </p>
-        <div class="iframeplaceholder"
-                id="drobbiIframe"
-                title="Drobbi Bird" 
-                height="650"
-                frameborder="0">
-                <button class="button button-play" onclick="loadIframe('drobbiIframe')">
-                    <h3> Play Drobbi Bird! </h3>
-                </button>
-        </div>
-        <div class="aligned">
-            <button class="button button-other" onclick="redirectToWebsite('https://youtu.be/_h-Rb0YXIbw?si=Mr4G9v_XoYYaHjSD')">
-                <img src="Images/YouTube.png" alt="YouTube" width="45" height="45"> Watch Trailer
-            </button>
-            <button class="button button-other" onclick="redirectToWebsite('/downloads/drobbi_bird')">
-                Download
-            </button>
-        </div>
+        <h2>Featured Games</h2>
+        <button class="button button-play" onclick="redirectToWebsite('/games/drobbi-bird')"><img src="Images/DrobbiBird.png" alt="DrobbiBird" width="45" height="45">Drobbi Bird</button>
+        <br><br><br>
+        <h2>All Games</h2>
+        <button class="button button-play" onclick="redirectToWebsite('/games/drobbi-bird')"><img src="Images/DrobbiBird.png" alt="DrobbiBird" width="45" height="45">Drobbi Bird</button>
+        <button class="button button-play" onclick="redirectToWebsite('/games/magnifier')"><img src="Images/Magnifier.png" alt="Magnifier" width="45" height="45">Magnifier</button>
+        <button class="button button-other" onclick="redirectToWebsite('/games')">All Games</button>
     </div>
-
+    <h4 class="webver">Website Version 1.100</h4>
 </body>
 </html>
