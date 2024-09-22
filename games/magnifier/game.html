@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+    <style>
+      #unity-canvas {
+        outline: solid thick #000;
+      }
+      #unity-fullscreen-button {
+        outline: solid thick #000;
+      }
+      c {
+        color: white;
+        text-shadow: 
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                -1px -1px 0 #000,
+                0px 2px 0 #000,
+                2px 0px 0 #000,
+                0px -2px 0 #000,
+                -2px 0px 0 #000;
+      }
+    </style>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -59,9 +79,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Build.data.gz",
-        frameworkUrl: buildUrl + "/Build.framework.js.gz",
-        codeUrl: buildUrl + "/Build.wasm.gz",
+        dataUrl: buildUrl + "/Build.data",
+        frameworkUrl: buildUrl + "/Build.framework.js",
+        codeUrl: buildUrl + "/Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "romoboss",
         productName: "Magnifier",
