@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Drobbi Bird is a tap-scroller video game. The game's core mechanics were based on the Game Maker's Toolkit's The Unity Tutorial For Complete Beginners on YouTube. Drobbi Bird draws inspiration from the classic game Flappy Bird. Players control a character equipped with a jetpack, tapping the screen to propel the character upward. The objective is to navigate through an endless series of pipes without colliding with them.">
+    <meta name="theme-color" data-react-helmet="true" content="#189c9e">
+    <meta property="og:image" content="../../Images/DrobbiBird.png">
+    <title>Drobbi Bird</title>
+    <link rel="icon" href="../../Images/DrobbiBird.png" type="image/png">
+    <link rel="stylesheet" href="../../style.css">
+
+    <script>
+        function loadIframe(id) {
+            var iframeContainer = document.getElementById(id);
+            iframeContainer.innerHTML = '<iframe src="/games/drobbi-bird/game" id="gameIframe" title="Local Iframe" height="650" frameborder="0"> Your browser does not support iframes.'
+        }
+
+        function redirectToWebsite(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="redirectToWebsite('/')" class="home-button">
+        <img src="../../Images/Home01.png" alt="Home">
+    </button>
+
+    <div class="container">
+        <h1 class="aligned">DrobbiBot<img src="../../Images/DrobbiBird.png" alt="DrobbiBird" width="75" height="75"> </h1>
+    </div>
+
+    <div class="container">
+        <h3>
+            <b>DrobbiBot</b> is a <b>Discord Bot</b> based on fun focused commands, created using <b>DSharpPlus</b> and <b>Visual Studio</b>. 
+        </h3>
+    </div>
+    <div class="container">
+        <h2>Commands</h2>
+        <h3>
+                 /jiggle
+            <br> /joke
+            <br> /combine
+            <br> /cat
+            <br> /dog
+            <br> /coinflip
+            <br> /randomnumber
+            <br> /trivia
+            <br> And more...
+        </h3>
+    </div>
+    <div class="container">
+        <h2>Hosting</h2>
+        <h3>
+            The Bot is currently <b>not being hosted publicly</b>! <br>
+            In order to use this bot you <b>need to have a bot token</b>. To get a token you neeed to create your own bot in the <b>Discord Developer portal</b>, that can be found <a href="https://discord.com/developers/applications">here</a>
+        </h3>
+    </div>
+    <div class="container">
+        <h2>Use Instructions</h2>
+        <h3>
+            1. Download <b>Visual Studio</b> (or Visual Studio Code) if you haven't already <br>
+            2. Download <b>Program.cs</b> and <b>DrobbiBot.csproj</b> <br>
+            3. Put the files in a folder <br>
+            4. <b>Open</b> the folder using <b>Visual Studio</b> <br>
+            5. Run <b>Program.cs</b>
+        </h3>
+    </div>
+    <div class="container">
+        <h2>Credits</h2>
+        <h3>
+            /cat command API: <a href="https://cataas.com/">https://cataas.com/</a> <br>
+            /dog command API: <a href=https://dog.ceo/>https://dog.ceo/</a> <br>
+            /joke command API: <a href=https://official-joke-api.appspot.com/>https://official-joke-api.appspot.com/</a> <br>
+            /trivia command API: <a href=https://opentdb.com/>https://opentdb.com/</a> <br>
+            /riddle command API: <a href=https://riddles-api.vercel.app/>https://riddles-api.vercel.app/</a>
+        </h3>
+    </div>
+    <div class="container">
+        <h2>Links</h2>
+        <div class="aligned">
+            <button class="button button-other" onclick="redirectToWebsite('https://github.com/romoboss/drobbibot')">
+                View on GitHub
+            </button>
+        </div>
+    </div>
+</body>
