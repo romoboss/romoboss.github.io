@@ -16,7 +16,7 @@ body {
     border-radius: 15px;
     text-align: center;
 }
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, li {
     margin: 0;
     padding: 10px 0;
     color: #ffffff;
