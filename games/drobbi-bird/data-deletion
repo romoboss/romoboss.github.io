@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <meta name="description" content="Delete your data from Drobbi Bird">
+    <meta name="theme-color" data-react-helmet="true" content="#189c9e">
+    <meta property="og:image" content="../../Images/WebIcon.png">
+    <link rel="icon" href="../../Images/WebIcon.png" type="image/png">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+    <h1>Delete your data from Drobbi Bird</h1>
+</div>
+<div class="container">
+  <h3>Leaderboard Data</h3>
+  <p>You have the right to:</p>
+  <ul>
+      <p>Request removal of your leaderboard entry. Press the “Remove my data from the leaderboard” button or contact us directly via one of the contact options listed at <a href="/aboutme">romoboss.github.io/aboutme</a>.</p>
+      <p>Request information about the data we hold related to your leaderboard submission.</p>
+  </ul>
+
+  <h4>Steps on how to delete your data from the leaderboard</h4>
+  <ul> 
+    <h4>1. Inside of the game: </h4>
+    <ul>
+      <p>1. Launch "Drobbi Bird" using the device on which you submitted the data that you want to get removed from the servers.</p>
+      <p>2. While in the main menu, click on the button that leads you to the leaderboards section (orange button with three black colored figures drawn on it).</p>
+      <p>3. Click on the "Remove my data from the leaderboard" button.</p>
+      <p>4. You're all done, all of the data submitted from the device you are currently using is deleted from the servers!</p>
+    </ul>
+    <h4>2. By contacting us outside the app (will take longer): </h4>
+    <ul>
+      <p>Contact us directly via one of the contact options listed at <a href="/aboutme">romoboss.github.io/aboutme</a>.</p>
+      <p>Make sure to provide your username and proof that you own the account that submitted the score.</p>
+      <p>I will try to respond as soon as possible. In case I do not reply to your message and the data still remains on the leaderboard, try to contact me using a different method.</p>
+      <p>The proccess of manual removal may take up to 30 days.</p>
+  </ul>
+  
+</div>
+</body>
+</html>
