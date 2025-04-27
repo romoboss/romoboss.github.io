@@ -4,9 +4,11 @@
       "title": "Drobbi Bird",
       "description": "Drobbi Drobbi Bird in the sky.",
       "dateCreated": "18/7/2023",
-      "url": "https://romoboss.github.io/downloads/drobbi-bird/1.606/Drobbi%20Bird%20-%20Windows.zip",
+      "url": "https://romoboss.github.io/downloads/drobbi-bird/--VERSION--/Drobbi%20Bird%20-%20Windows.zip",
       "launchCommand": "WindowsBuild/Drobbi Bird.exe",
-      "gameIcon": "https://romoboss.github.io/Images/DrobbiBird.png"
+      "gameIcon": "https://romoboss.github.io/Images/DrobbiBird.png",
+      "currentVersion": "1.601",
+      "availableVersions": ["1.601", "1.6", "1.5"]  
     }
 ]
   
