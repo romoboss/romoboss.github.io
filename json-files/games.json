@@ -11,6 +11,6 @@
     "gameIcon": "https://romoboss.github.io/Images/DrobbiBird.png",
     "currentVersion": "1.606",
     "availableVersions": ["1.606", "1.6", "1.5"],
-    "backgroundImage": "https://romoboss.github.io/Images/DrobbiBirdBanner.png"
+    "thumbnailImage": "https://romoboss.github.io/Images/DrobbiBirdBanner.png"
   }
 ]
