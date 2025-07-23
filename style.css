@@ -134,3 +134,15 @@ a {
     text-align: right;
     margin-right: 2px;
 }
+.spoiler {
+    background-color: black;
+    color: black;
+    padding: 2px 4px;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+.spoiler:active {
+    color: white;
+}
