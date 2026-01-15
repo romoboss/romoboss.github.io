@@ -1,0 +1,8 @@
+{
+  "title": "Magnifier",
+  "metaDescription": "Magnifier jjj is a simple video game, where your goal is to guess the rgb value of a color.",
+  "themeColor": "#FFFFFF",
+  "icon": "/Images/Magnifier.png",
+  "gameFile": "game.html",
+  "descriptionHTML": "<b>Magnifier</b> jjj is a <b>simple</b> video game, where your goal is to <b>guess the rgb value</b> of a color. The gameplay is very simple because the game was made for fun in just <b>2 days</b> as a challenge."
+}
