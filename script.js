@@ -11,7 +11,7 @@ const footerHTML = `
                 <a href="/aboutme"><p><b>Contact Me</b></p></a>
             </div>
             <p>Copyright &copy; 2026 Romoboss Games. All rights reserved.</p>
-            <p>Website Version 1.3</p>
+            <p>Website Version 1.31</p>
         </div>
     </div>
 `;
