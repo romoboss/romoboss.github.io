@@ -17,7 +17,7 @@ const footerHTML = `
 `;
 const homeButtonHTML = `
     <button onclick="redirectToWebsite('/')" class="home-button">
-        <img src="https://romoboss.github.io/Images/Home01.png" alt="Home">
+        <img src="https://romoboss.com/Images/Home01.png" alt="Home">
     </button>
 `;
 
